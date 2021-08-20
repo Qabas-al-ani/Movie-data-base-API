@@ -1,70 +1,54 @@
-# Unit 12 Mini-Project: Movie Database
+# Movie db API 
+  ----
+  [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Technologies](#Technologies)
+- [Usage](#usage)
+- [Contribution](#contribution)
+- [Test Instructions](#test-instructions)
+- [Questions](#questions)
 
-In this mini-project, you will build Rest API routes for creating, retrieving, and deleting movies from a MySQL database.
+## Description:
+This is backend project that will help to create an API movie data base that can storage unlimited movies and also it can add,update and delete movies and it is all done by experss.js and mysql data base.
 
-## User Stories
 
-* As a user, I want to create a new database.
+## Technologies
+```
+- Express.js.
+- Mysql.
+- Sql.
+- Java Script.
+- Mysql2 npm package.
+- Node.js.
+```
 
-* As a user, I want to store movie names and reviews in the database in two separate table.
 
-* As a user, I want to see a list of all movies.
+### Installation
+```
+1 - npm install
+2- mysql -u root -p
+3- source schema.sql
+4- source seeds.sql
+```
 
-* As a user, I want to be able to create and delete a movie.
+### Usage
+CRUD/REST api movie data base.
 
-* As a user, I want to return a list of all the reviews and the associated movie name.
 
-## Acceptance Criteria
+### Contribution
+```
+Contributions, issues, and feature requests are welcome!
+Give a ⭐️ if you like this project!
+```
 
-* It's done when `movie_db` is created and contains a `movies` and `reviews` table.
+### Questions? 
+For any questions, please contact me with the information below:
 
-* It's done when `movie_db` has been seeded with data.
+doctorqa@yahoo.com
 
-* It's done when the `/api/movies` route renders a list of all movies.
+[LinkedIn Profile](https://www.linkedin.com/in/qabas-al-ani-7b858863/)
 
-* It's done when the `/api/add-movie` route successfully adds a movie when tested using Insomnia.
+[Github Profile](https://github.com/Qabas-al-ani)
 
-* It's done when the `/api/update-review` route successfully updates a movie when tested using Insomnia.
-
-* It's done when the `/api/movie/:id` route deletes a route when tested using Insomnia.
-
----
-
-## Assets
-
-Design the following database schema that contains two tables:
-
-![The database schema includes a movies table and a reviews table, linked by the movie id.](./assets/image_1.png)
-
----
-
-## Notes
-
-To test your routes you will use Insomnia. If you have not already downloaded it, you will need to visit the [Insomnia download page](https://insomnia.rest/download) and do so.
-
-Refer to the documentation:
-
-[Insomnia documentation on getting started](https://support.insomnia.rest/category/152-using-insomnia)
-
-[Express.js documentation on routing](https://expressjs.com/en/guide/routing.html)
-
-[MySQL documentation on joins](https://dev.mysql.com/doc/refman/8.0/en/join.html)
-
-[npm documentation on MySQL2](https://www.npmjs.com/package/mysql2)
-
-## 💡 Hints
-
-How can you link your `movies` and `reviews` tables?
-
-How can you execute a query in an Express.js server using the npm `MySQL2` package?
-
-## 🏆 Bonus
-
-If you have completed this activity, work through the following challenge with your partner to further your knowledge:
-
-* How can you add a route to update a review?
-
-Use [Google](www.google.com) or another search engine to research this.
-
----
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
