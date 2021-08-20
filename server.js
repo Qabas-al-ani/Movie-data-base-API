@@ -33,14 +33,29 @@ app.get("/api/movies", (req, res) => {
   });
 });
 
-app.post("/api/add-movie",(req, res) => {
+app.post("/api/add-movie", (req, res) => {
   db.query(
-    "INSERT INTO movies (movie_name) VALUES (?)", req.body.movie,
+    "INSERT INTO movies (movie_name) VALUES (?)",
+    req.body.movie,
     function (err, results) {
       if (err) {
         console, log(err);
       } else {
         res.json(`This movie ${req.body.movie.toUpperCase()} was added`);
+      }
+    }
+  );
+});
+
+app.post("/api/update-review", (req, res) => {
+  db.query(
+    "UPDATE reviews SET review = ? WHERE id = ?",
+    [req.body.review, req.body.id],
+    function (err, results) {
+      if (err) {
+        console, log(err);
+      } else {
+        res.json(`This review ${req.body.review} was added`);
       }
     }
   );
